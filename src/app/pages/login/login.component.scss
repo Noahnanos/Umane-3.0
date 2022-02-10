@@ -1,0 +1,105 @@
+//Pantalla Login
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+
+  // navbar umane azul
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f1c50;
+    height: 91px;
+    border-bottom: 3px solid #e6b600;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.176);
+    h1 {
+      position: absolute;
+      font-family: "zen dots";
+      font-size: 45px;
+      color: #ffffff;
+      padding-left: 88px;
+      margin-top: 5px;
+    }
+    :first-child {
+      margin-left: 25px;
+    }
+    :nth-child(3) {
+      margin-right: 25px;
+      height: 27.5px;
+    }
+  }
+  //card login
+  .cards-container {
+    display: flex;
+    height: calc(100% - 91px);
+    .opa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 45%;
+      background-image: linear-gradient(
+        180deg,
+        rgba(103, 133, 193, 0) 3.12%,
+        rgba(103, 133, 193, 0.475676) 55.21%,
+        rgba(103, 133, 193, 0.63) 100%
+      );
+      .login-card {
+        height: 494px;
+        width: 397px;
+        box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.176);
+        border-radius: 10px;
+        padding: 14px;
+        .mat-card-header {
+        }
+        .mat-card-title {
+          font-size: 28px;
+          align-items: center;
+          margin-top: 60px;
+          margin-left: 30px;
+        }
+        mat-card-actions {
+          width: 100%;
+          button {
+            width: 100%;
+            background-color: #e19438;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    //tarjetas de información con imagen de fondo
+    .info-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 55%;
+      background-image: url("../../../assets/img/img-background-login.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center right;
+      .info-card {
+        margin: 32px;
+        width: 383px;
+        height: 160px;
+        mat-card-title {
+          font-size: 20px;
+        }
+      }
+    }
+    
+  }
+  .footer {
+    background-color: #0f1c50;
+    color: #ffffff;
+    height: 45px;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.176);
+    p{
+      margin: 12px 0px -12px 18px;
+    }
+  }
+}
